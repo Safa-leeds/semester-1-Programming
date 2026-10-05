@@ -2,12 +2,12 @@ import sys
 try:
     grade = int(input('enter your grade '))
     if grade >= 70 and grade <=100:
-        print(grade,'is a distinction')
+        print(grade,'is a Distinction')
     elif grade >= 40 and grade <=69:
-        print(grade,'is a pass')
+        print(grade,'is a Pass')
     elif grade >= 0 and grade <=40:
-        print(grade,'is a fail')
+        print(grade,'is a Fail')
     else:
-        sys.exit('Error: grade must be an integer between 0 and 100')
+        sys.exit('Error: Grade must be an integer between 0 and 100')
 except:
-    sys.exit('Error: grade must be an integer between 0 and 100')
+    sys.exit('Error: Grade must be an integer between 0 and 100')
