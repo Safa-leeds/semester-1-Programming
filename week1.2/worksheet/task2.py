@@ -6,7 +6,7 @@ if len(numbers) == 0:
 else:
     print(f'Minimum = {min(numbers)}')
     print(f'Maximum = {max(numbers)}')
-    print(f'Mean = {'{:.1f}'.format(sum(numbers)/ len(numbers))}')
+    print(f"Mean = {sum(numbers) / len(numbers):.1f}")
     numbers.sort()
     if len(numbers) % 2 == 0:
         mid_right = int(len(numbers)/2)
