@@ -17,6 +17,12 @@ def currency_converter(amount, from_currency, to_currency):
         'PHP': {'CNY': 0.12, 'GBP': 0.01, 'INR': 1.45},
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
+    if amount < 0 :
+        print('0.0')
+    else:
+        b = conversion_rate.get(from_currency).get(to_currency)
+        a = round(amount * b, 2)
+        print(a)
 
     # your code here
 
