@@ -10,12 +10,14 @@ state_time = [4, 3, 5, 3]
 systime = 0
 maxtime = int(input())  # read an integer number of steps (>0)
 state = "red"
-counter = 0
+counter = 1
 place = 0
+print(f"Time {systime:03} State {state}")
 while systime < maxtime:
-    print(f"Time {systime:03} State {state}")
     systime = systime + 1
     counter = counter + 1
+    print(f"Time {systime:03} State {state}")
+
     if counter == states[state]:
         place = place+1
         state = state_order[place] 
