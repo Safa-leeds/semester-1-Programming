@@ -19,11 +19,10 @@ while systime < maxtime:
     print(f"Time {systime:03} State {state}")
 
     if counter == states[state]:
-        place = place+1
+        place = (place+1) % len(state_order)
         state = state_order[place] 
         counter = 0
-        if place == 3 :
-            place = 0
+
             
 
 
