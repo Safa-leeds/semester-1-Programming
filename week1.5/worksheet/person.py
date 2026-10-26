@@ -29,9 +29,7 @@ class Person:
         return initals
         print(initals)
         
-person = Person("longest name ever", date(2000, 10, 26))
-print(person.initials())
-print(person.is_birthday())
+
 
 
 
