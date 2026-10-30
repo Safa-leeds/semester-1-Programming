@@ -27,7 +27,7 @@ class Person:
         for i in range(0,(len(name_list))):
             initals = initals + (name_list[i][0])
         return initals
-        print(initals)
+
         
 
 
