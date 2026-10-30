@@ -25,11 +25,6 @@ class Rectangle:
     def perimeter(self):
         return (self.width) * 2 + (self.height) * 2
 
-rectangle = Rectangle(40,40)    
-print(rectangle.is_square())
-print(rectangle.area())
-print(rectangle.perimeter())
-
 
 
 
