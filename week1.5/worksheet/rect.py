@@ -11,9 +11,9 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if not isinstance(height, (int)):
             raise TypeError("height must be an integer")
-        if not isinstance(height<=0, (bool)):
+        if isinstance(height<=0, (bool)):
             raise ValueError("cannot be less tham zero")
-        if not isinstance(width<=0, (bool)):
+        if isinstance(width<=0, (bool)):
             raise ValueError("cannot be less tham zero")
     def is_square(self):
         if self.width == self.height:
