@@ -5,37 +5,31 @@ class Rectangle:
     A rectangle, with a width and a height.
     """
     def __init__(self, width, height):
-            """
-    Initalise parametrs fort he class
-    """
+        """
+        Initialise the rectangle with a width and height.
+        """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if width <= 0:
+            raise ValueError("width must be greater than zero")
+        if height <= 0:
+            raise ValueError("height must be greater than zero")
         self.width = width
         self.height = height
-        if not isinstance(width, (int)):
-            raise TypeError("width must be an integer")
-        if not isinstance(height, (int)):
-            raise TypeError("height must be an integer")
-        if isinstance(height<=0, (bool)):
-            raise ValueError("cannot be less tham zero")
-        if isinstance(width<=0, (bool)):
-            raise ValueError("cannot be less tham zero")
+
     def is_square(self):
-            """
-    check if the shape is a square
-    """
-        if self.width == self.height:
-            return True
-        else:
-            return False
+        """Return True if the rectangle is a square."""
+        return self.width == self.height
+
     def area(self):
-            """
-    calculate area
-    """
+        """Return the area of the rectangle."""
         return self.width * self.height
+
     def perimeter(self):
-            """
-    Calculate parameter
-    """
-        return (self.width) * 2 + (self.height) * 2
+        """Return the perimeter of the rectangle."""
+        return 2 * (self.width + self.height)
 
 
 

@@ -3,25 +3,27 @@
 from datetime import date
 
 class Person:
-        """
+    """
     Define the person class
     """
     def __init__(self,name, birth):
-            """
-    Initailise paramters and check inputs
-    """
+        """
+        Initailise paramters and check inputs
+        """
         self.name = name
         self.birth = birth
         if not isinstance(name, (str)):
+            raise TypeError("name field cannot be empty")
+        if len(name) == 0:
             raise ValueError("name field cannot be empty")
         if not isinstance(birth, (date)):
             raise TypeError("dob must be a date")
     
 
     def is_birthday(self):
-            """
-    Checks the birthday of the person by checking the month and day
-    """
+        """
+        Checks the birthday of the person by checking the month and day
+        """
         if (self.birth).day == (date.today()).day and (self.birth).month == (date.today()).month:
             return True
         else:
@@ -31,9 +33,9 @@ class Person:
     A Person, with a name and a date of birth.
     """
     def initials(self): 
-            """
-    Return iniutials of the person
-    """
+        """
+        Return iniutials of the person
+        """
         initals = ''
         name_list = self.name.split()
         for i in range(0,(len(name_list))):
