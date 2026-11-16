@@ -3,6 +3,9 @@
 i = 0
 
 while i < 20:
+    if i % 3 == 0:
+        i = i + 1
+        continue
     i = i + 1
     print(i)
 

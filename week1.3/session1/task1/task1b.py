@@ -10,3 +10,4 @@ while fruit:
 # Why does this work?
 
 # What features of Python does it rely on?
+#using pop() from python removes the last item to the user until there is no mre items in list
