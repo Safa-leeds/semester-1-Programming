@@ -56,11 +56,11 @@ class Deck:
 
     def shuffle(self):
         """Shuffles this deck randomly."""
-        # NEEDS COMPLETING
+        random.shuffle(self.deck)
 
     def deal(self):
         """Removes top card from this deck and returns it."""
-        # NEEDS COMPLETING
+        return self.deck.pop(0)
 
     def __len__(self):
         return len(self.deck)
