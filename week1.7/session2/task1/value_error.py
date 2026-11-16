@@ -4,5 +4,8 @@
 
 user_profile = {"username": "alice99", "role": "admin"}
 
-for key, value in user_profile:
-	print(f"{key} : {value}")
+for key in user_profile: # seperted key and value to void errors
+	print(f"{key} : ")
+	
+for value in user_profile:
+	print(f"{value}")

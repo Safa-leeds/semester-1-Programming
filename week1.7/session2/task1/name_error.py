@@ -3,7 +3,7 @@
 # Run this program and observe what happens
 
 expenses = [10, 20, 30]
-
+total = 0# defined the variable total for the code to work
 for amount in expenses:
     total = total + amount  
 

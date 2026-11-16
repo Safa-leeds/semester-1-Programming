@@ -16,12 +16,13 @@ def calculate_average(scores):
     total_assignments = len(scores)
     
     # add debug logging here
+    logging.basicConfig(filename='log.txt', filemode='w', level=logging.DEBUG)
     
     average = total_score // total_assignments
     
     # add a debug logging here
-    
-    return round(average,2)
+    logging.basicConfig(filename='log.txt', filemode='w', level=logging.DEBUG) 
+    return round(average,2) 
 
 print(calculate_average([85, 90, 88]))
 # Expected Output: 87.67

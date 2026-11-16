@@ -9,9 +9,9 @@ from weather import comfort_level
 
 def test_cold():
     assert comfort_level(5) == "COLD"
-    assert comfort_level(15) == "COLD"
+    assert comfort_level(15) == "COLD" # some tests both boundary and erreounous
 
 def test_hot():
-    assert comfort_level(25) == "HOT"
+    assert comfort_level(25) == "HOT" # some tests both boundary and erreounous
     assert comfort_level(30) == "HOT"
     
